@@ -2,12 +2,14 @@ pipeline {
     // ใช้ any agent เพื่อหลีกเลี่ยงปัญหา Docker path mounting บน Windows
     agent any
 
+    tools {nodejs "nodejs"}
+
     // กำหนด environment variables
     environment {
         // ใช้ค่าเป็น "credentialsId" ของ Jenkins โดยตรงสำหรับ docker.withRegistry
         DOCKER_HUB_CREDENTIALS_ID = 'dockerhub-cred'
-        DOCKER_REPO = "imron5/express-docker-app"
-        APP_NAME = "express-docker-app"
+        DOCKER_REPO = "imron5/express-docker-app-jenkins"
+        APP_NAME = "express-docker-app-jenkins"
     }
 
     // กำหนด stages ของ Pipeline
