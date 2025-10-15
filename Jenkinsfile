@@ -18,7 +18,7 @@ def sendNotificationToN8n(String status, String stageName) {
                 build    : env.BUILD_NUMBER,
                 image    : "${env.DOCKER_REPO}:latest",
                 container: env.APP_NAME,
-                url      : 'http://localhost:3000/',
+                url      : 'http://localhost:3333/',
                 timestamp: new Date().format("yyyy-MM-dd'T'HH:mm:ssXXX")
             ]
             def body = groovy.json.JsonOutput.toJson(payload)
