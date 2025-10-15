@@ -38,7 +38,7 @@ npm start
 
 ```bash
 docker build -t express-docker-app .
-docker run -p 3000:3000 express-docker-app
+docker run -p 3333:3000 express-docker-app
 ```
 
 ## Project Structure
