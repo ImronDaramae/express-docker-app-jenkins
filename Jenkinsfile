@@ -1,5 +1,3 @@
-System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Bangkok')
-
 // =================================================================
 // HELPER FUNCTION: สร้างฟังก์ชันสำหรับส่ง Notification ไปยัง n8n
 // การสร้างฟังก์ชันช่วยลดการเขียนโค้ดซ้ำซ้อน (DRY Principle)
